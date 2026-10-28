@@ -1,0 +1,28 @@
+{
+  "name": "liveswapface-public-info-mcp",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "description": "Read-only MCP tools for LiveSwapFace public information and session credit estimates",
+  "homepage": "https://liveswapface.com/",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "test": "node --test dist/*.test.js"
+  },
+  "engines": {
+    "node": ">=20.18.1"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "^2.0.0",
+    "cheerio": "^1.1.0",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/client": "^2.4.0",
+    "@types/node": "^22.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^6.0.0"
+  }
+}
